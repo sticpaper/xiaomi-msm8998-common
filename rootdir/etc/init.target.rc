@@ -98,7 +98,7 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy0/interactive/min_sample_time 19000
     write /sys/devices/system/cpu/cpufreq/policy0/interactive/max_freq_hysteresis 79000
     write /sys/devices/system/cpu/cpufreq/policy0/interactive/ignore_hispeed_on_notif 1
-	write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 300000
+	write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 518400
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "interactive"
@@ -113,7 +113,7 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy4/interactive/min_sample_time 19000
     write /sys/devices/system/cpu/cpufreq/policy4/interactive/max_freq_hysteresis 79000
     write /sys/devices/system/cpu/cpufreq/policy4/interactive/ignore_hispeed_on_notif 1
-	write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq 300000
+	write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq 806400
 
     # Enable thermal and BCL hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
