@@ -144,6 +144,10 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
+    # Virtual Memory Changes
+    write /proc/sys/vm/page-cluster 0
+	write /proc/sys/vm/swappiness 80
+
 on fs
     mount_all /vendor/etc/fstab.qcom
     swapon_all /vendor/etc/fstab.qcom
